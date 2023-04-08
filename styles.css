@@ -69,11 +69,21 @@ ul {
 li {
   margin: 30px 0; 
 }
+
 #tribute-info {
   padding: 3rem 1rem;  
   margin: 0 auto 50px auto;
-  max-width: 500px;
+  max-width: 550px;
 
+}
+
+blockquote {
+  font-style: italic;
+  text-align: left;
+}
+
+blockquote > p {
+  margin-bottom: 15px;
 }
 
 a {
