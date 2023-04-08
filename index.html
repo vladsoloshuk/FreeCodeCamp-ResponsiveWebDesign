@@ -1,77 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <title>Survey Form</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <meta charset="UTF-8">
-</head>
-
-<body>
-  <h1 class="title">freeCodeCamp Survey Form</h1>
-  <p class="description">Thank you for taking the time to help us improve the platform</p>
-  <form class="survey-form">
-    <fieldset class="form-element">
-      <label class="form-label" for="name">Name</label>
-      <input class="form-input" type="text" id="name" name="name" placeholder="Enter your name" required/>
-    </fieldset>
-    <fieldset class="form-element">
-      <label class="form-label" for="email">Email</label>
-      <input class="form-input" type="email" id="email" name="email" placeholder="Enter your Email" required />
-    </fieldset>
-    <fieldset class="form-element">
-      <label class="form-label" for="age">Age <span>(optional)</span></label>
-      <input class="form-input" type="number" id="age" name="age" min="10" max="99" placeholder="Age" required />
-    </fieldset>
-    <fieldset class="form-element">
-      <label class="form-label">Which option best describes your current role?</label>
-      <select id="dropdown-role" class="form-input">
-        <option class="form-select" disabled selected>Select current role</option>
-        <option class="form-select" value="student">Student</option>
-        <option class="form-select" vlaue="fullTimeJob">Full Time Job</option>
-        <option class="form-select" value="fullTimeLearner">Full Time Learner</option>
-        <option class="form-select" value="noSaying">Prefer not to say</option>
-        <option class="form-select" value="other">Other</option>
-      </select>
-    </fieldset>
-    <fieldset class="form-element">
-      <label class="form-label">Would you recommend freeCodeCamp to a friend?</label>
-      <label class="form-label" for="definitely"><input class="radio-input" type="radio" name="radio" value="definitely" id="definitely"  name="definitely" checked />Definitely</label>
-      <label class="form-label"><input class="radio-input" type="radio" name="radio" value="maybe" />Maybe</label>
-      <label class="form-label"><input class="radio-input" type="radio" name="radio" value="not-sure" />Not sure</label>
-    </fieldset>
-    <fieldset class="form-element">
-      <label class="form-label">What is your favorite feature of freeCodeCamp?</label>
-      <select id="dropdown-feature" class="form-input">
-        <option class="form-select" disabled selected>Select an option</option>
-        <option class="form-select" value="challenges">Challenges</option>
-        <option class="form-select" value="projects">Projects</option>
-        <option class="form-select" value="community">Community</option>
-        <option class="form-select" value="openSource">Open Source</option>
-      </select>
-    </fieldset>
-    <fieldset class="form-element">
-      <label class="form-label">What would you like to see improved? <span>(Check all that apply)</span></label>
-      <label class="form-label" for="frontEndProjects"><input class="check-input" type="checkbox" value="frontEndProjects" id="frontEndProjects">Front-end Projects</label>
-      <label class="form-label"><input class="check-input" type="checkbox" value="backEndProjects">Back-end Projects</label>
-      <label class="form-label"><input class="check-input" type="checkbox" value="dataVisualization">Data Visualization</label>
-      <label class="form-label"><input class="check-input" type="checkbox" value="challenges">Challenges</label>
-      <label class="form-label"><input class="check-input" type="checkbox" value="openSourceVommunity">Open Source Community</label>
-      <label class="form-label"><input class="check-input" type="checkbox" value="gitterHelpRooms">Gitter help rooms</label>
-      <label class="form-label"><input class="check-input" type="checkbox" value="videos">Videos</label>
-      <label class="form-label"><input class="check-input" type="checkbox" value="cityMeetups">City Meetups</label>
-      <label class="form-label"><input class="check-input" type="checkbox" value="wiki">Wiki</label>
-      <label class="form-label"><input class="check-input" type="checkbox" value="forums">Forum</label>
-      <label class="form-label"><input class="check-input" type="checkbox" value="additionalCourses">Additional Courses</label>
-    </fieldset>
-    <fieldset class="form-element">
-      <label class="form-label">Any comments or suggestions?</label>
-      <textarea class="form-textarea" placeholder="Enter your comment here..."></textarea>
-    </fieldset>
-    <fieldset class="form-element">
-      <button type="submit" id="submit" class="submit-button">Submit</button>
-    </fieldset>
-  </form>
-</body>
-
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Dr. Norman Borlaug</title>
+  </head>
+  <body>
+    <main id="main">
+      <h1 id="title">Dr. Norman Borlaug</h1>
+      <p>The man who saved a billion lives</p>
+      <figure>
+        <div id="img-div">
+          <img id="image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute-page-main-image.jpg" alt="">
+          <figcaption id="img-caption">Dr. Norman Borlaug, third from the left, trains biologists in Mexico on how to increase wheat yields - part of his life-long war on hunger.</figcaption>
+        </div>
+      </figure>
+      <section id="tribute-info">
+        <h3>Here's a time line of Dr. Borlaug's life:</h3>
+        <ul>
+          <li><strong>1914</strong> - Born in Cresco, Iowa</li>
+          <li><strong>1933</strong> - Leaves his family's farm to attend the University of Minnesota, thanks to a Depression era program known as the "National Youth Administration"</li>
+          <li><strong>1935</strong> - Has to stop school and save up more money. Works in the Civilian Conservation Corps, helping starving Americans. "I saw how food changed them", he said. "All of this left scars on me."</li>
+          <li><strong>1937</strong> - Finishes university and takes a job in the US Forestry Service</li>
+          <li><strong>1938</strong> - Marries wife of 69 years Margret Gibson. Gets laid off due to budget cuts. Inspired by Elvin Charles Stakman, he returns to school study under Stakman, who teaches him about breeding pest-resistent plants.</li>
+          <li><strong>1941</strong> - Tries to enroll in the military after the Pearl Harbor attack, but is rejected. Instead, the military asked his lab to work on waterproof glue, DDT to control malaria, disinfectants, and other applied science.</li>
+          <li><strong>1942</strong> - Receives a Ph.D. in Genetics and Plant Pathology</li>
+          <li><strong>1944</strong> - Rejects a 100% salary increase from Dupont, leaves behind his pregnant wife, and flies to Mexico to head a new plant pathology program. Over the next 16 years, his team breeds 6,000 different strains of disease resistent wheat - including different varieties for each major climate on Earth.</li>
+          <li><strong>1945</strong> - Discovers a way to grown wheat twice each season, doubling wheat yields</li>
+          <li><strong>1953</strong> - crosses a short, sturdy dwarf breed of wheat with a high-yeidling American breed, creating a strain that responds well to fertilizer. It goes on to provide 95% of Mexico's wheat.</li>
+          <li><strong>1962</strong> - Visits Delhi and brings his high-yielding strains of wheat to the Indian subcontinent in time to help mitigate mass starvation due to a rapidly expanding population</li>
+          <li><strong>1970</strong> - receives the Nobel Peace Prize</li>
+          <li><strong>1983</strong> - helps seven African countries dramatically increase their maize and sorghum yields</li>
+          <li><strong>1984</strong> - becomes a distinguished professor at Texas A&M University</li>
+          <li><strong>2005</strong> - states "we will have to double the world food supply by 2050." Argues that genetically modified crops are the only way we can meet the demand, as we run out of arable land. Says that GM crops are not inherently dangerous because "we've been genetically modifying plants and animals for a long time. Long before we called it science, people were selecting the best breeds."</li>
+          <li><strong>2009</strong> - dies at the age of 95.</li>
+        </ul>
+        <blockquote>
+          <p>"Borlaug's life and achievement are testimony to the far-reaching contribution that one man's towering intellect, persistence and scientific vision can make to human peace and progress."</p>
+          <cite>-- Indian Prime Minister Manmohan Singh</cite>
+        </blockquote>
+        </section>
+        <h3>If you have time, you should read more about this incredible human being on his <a id="tribute-link" href="https://en.wikipedia.org/wiki/Norman_Borlaug" target="_blank">Wikipedia entry</a>.</h3>
+    </main>
+  </body>
 </html>
